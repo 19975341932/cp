@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cp</groupId>
+    <artifactId>cp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--父项目用pom-->
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>cp-common</module>
+        <module>cp_java</module>
+        <module>cp-sb</module>
+        <module>cp-common-test</module>
+        <module>cp-source</module>
+        <module>cp-sc</module>
+        <module>cp-distributed</module>
+        <module>cp-kafka</module>
+    </modules>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.0.M3</version>
+        </dependency>
+    </dependencies>
+</project>
